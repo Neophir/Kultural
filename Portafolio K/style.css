@@ -1,0 +1,348 @@
+/* Estilos para la cabecera */
+header {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 7rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  header p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  /* Estilos para la navegación */
+  .banner
+  {
+    background: #000;
+    padding: 14px;
+    margin: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #ff9000;
+  }
+  
+  /* Estilos para la sección de proyectos */
+  #proyectos {
+    background-color: #ff9000;
+    color: #fff;
+    padding: 50px;
+  }
+  #proyectos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #proyectos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #proyectos li {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  .carta {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .carta-titulo {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .carta-contenido {
+    padding: 20px;
+    color: #000;
+    font-size: 1.2rem;
+    display: none;
+  }
+  .carta-contenido img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Cambiar el cursor a una mano al pasar sobre la carta-titulo */
+.carta-titulo:hover {
+    cursor: pointer;
+  }
+  
+  /* Agregar un efecto de transición suave al expandir / contraer la carta-contenido */
+  .carta-contenido {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Agregar un estilo diferente al contenido de la carta cuando está expandido */
+  .carta.expandido .carta-contenido {
+    display: block;
+  }
+  
+  /* Agregar una animación de rotación de 180 grados cuando se expande la carta */
+  .carta.expandido .carta-titulo::after {
+    transform: rotate(180deg);
+  }
+  
+  /* Agregar una flecha hacia abajo después del título de la carta */
+  .carta-titulo::after {
+    content: '\25BC';
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Agregar una flecha hacia arriba después del título de la carta cuando está expandida */
+  .carta.expandido .carta-titulo::after {
+    content: '\25B2';
+  }
+  
+
+  /* Estilos para la sección de contacto */
+  #contacto {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 50px;
+  }
+  #contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #contacto p {
+    font-size: 1.2rem;
+  }
+  #contacto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #contacto li {
+    margin-bottom: 10px;
+  }
+  #contacto a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  #contacto form {
+    margin-top: 20px;
+  }
+  #contacto label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  #contacto input, #contacto textarea {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+  }
+  #contacto button {
+    background-color: #ff9000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    #contacto button:hover {
+    background-color: #fff;
+    color: #1F1F1F;
+    }
+    
+    /* Estilos para el pie de página */
+    footer {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    footer p {
+    font-size: 1.2rem;
+    margin: 0;
+    }
+    
+    /* Agregar la fuente de Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+    
+    /* Aplicar la fuente a todo el sitio */
+    body {
+    font-family: 'Helvetica', sans-serif;
+    }
+
+
+    #acerca {
+        background-color: #f0f0f0;
+        padding: 50px;
+      }
+      
+      #acerca h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      #acerca p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.5;
+      }
+      /* Barras de porcentaje */
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #habilidades {
+        flex-basis: 50%;
+        margin-right: 2%;
+      }
+      
+      .imagen {
+        flex-basis: 40%;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        
+        #habilidades {
+          flex-basis: 100%;
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+        
+        .imagen {
+          flex-basis: 100%;
+          max-width: 55%;
+        }
+      }
+      
+
+.nombre {
+  display: inline-block;
+  width: 100px;
+}
+
+.porcentaje {
+  width: 200px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.relleno {
+  height: 20px;
+  background-color: #ff9000;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.numero {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+}
+
+.relleno {
+  background-color: #ff9000;
+  height: 20px;
+  transition: width 0.5s ease;
+  transform-origin: left;
+}
+
+.porcentaje:hover .relleno {
+  width: 100%;
+}
+
+
+/* Imagen de presentación */
+
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Ajusta esta altura según tus necesidades */
+  background-color: #f2f2f2;
+}
+
+.imagen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Animacion de aparicion */
+
+body {
+  background-color: #000  ;
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+  animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
